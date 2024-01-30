@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales</title>
+    <link rel="stylesheet" href="/css/animales.css">
+</head>
+
+<body>
+    <!-- <audio id="abc" autoplay>
+        <source src="/audio/Sebastian Yatra - Tacones Rojos.mp3" type="audio/mpeg">
+        tu navegador no es compatible
+    </audio> -->
+     <!-- <script>
+        const abc=document.getElementById("abc")
+        abc.addEventListener("load", function(){
+            abc.play();
+        })
+     </script> -->
+    <div id="resp">
+        <h1>
+           Ross, esto es para ti, Espero que te guste!!
+          <p>🥰​❤️​😊​</p>
+        </h1>
+      
+    </div>
+    <br>
+    <div class="caja">
+        <img src="https://img.freepik.com/free-vector/cute-heart-angel-holding-love-cartoon-icon-illustration_138676-2699.jpg?t=st=1706636540~exp=1706637140~hmac=499e225ca4197e57dbf2ac9638397236c2453714e33fd43f47e923628825e3cf"
+        alt="Imagen" height="250px" id="miImagen" style="cursor: pointer;">
+    </div>
+    
+
+    <div class="opcs1">
+        <button class="botonR" id="Perro" onclick="verificarRespuesta(`perro`)"
+        style="cursor: pointer;" type="button">Continuar</button>
+    </div>
+    <style>
+      .botonR{
+        background: goldenrod;
+        padding: 20px;
+        width: 150px;
+        height: 100px;
+        transition: .5s;
+        border-radius: 16px;
+        font-size: 20px;
+      }
+      .botonR:hover{
+        transform: scale(1.2);
+      }
+    </style>
+
+    <!--ESTE ES SONIDO DE LA CAJA (PERRO)-->
+    <!-- <audio id="miSonido">
+        <source src="/audio/mixkit-medium-size-angry-dog-bark-54.wav" type="audio/mp3">
+    </audio> -->
+    <!--ESTE ES SONIDO CORRECTO-->
+    <audio id="correcto">
+        <source src="/audio/Respuesta Correcta .mp3" type="audio/mp3">
+    </audio>
+    <!--ESTE ES SONIDO INCORRECTO-->
+    <!-- <audio id="incorrecto">
+        <source src="/audio/Respuesta Incorrecta .mp3" type="audio/mp3">
+    </audio> -->
+
+    <script src="/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="/js/sweetAlert.js"></script>
+</body>
+</html>

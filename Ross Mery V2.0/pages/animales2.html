@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIVEL 2</title>
+    <link rel="stylesheet" href="/css/animales.css">
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="/audio/Sebastian Yatra - Tacones Rojos.mp3" type="audio/mpeg">
+        tu navegador no es compatible
+    </audio>
+
+    <div id="resp">
+        <h1>
+           Ross...
+            <hr>Desde que te conoci mis dias han pasado de la oscuridad a la luz, Asi de feliz me encuentro gracias a ti...😉​😊​
+        </h1>
+    </div>
+    <br>
+
+    <div class="caja">
+        <img src="https://img.freepik.com/free-vector/heart-symbol-shines-bright_24877-81851.jpg?w=740&t=st=1706639110~exp=1706639710~hmac=8d97651bf68e4a83c289e99a397e3f45272a75793709032b67f44de928dd5326"
+        alt="Imagen" height="250px" id="miImagen" style="cursor: pointer;">
+    </div>
+
+    <div class="opcs1">
+        <button class="botonR" id="Leon" onclick="verificarRespuesta(`Leon`)"
+        style="cursor: pointer;" type="button">Continuar</button>
+        
+    </div>
+    <style>
+        .botonR{
+          background: goldenrod;
+          padding: 20px;
+          width: 150px;
+          height: 100px;
+          transition: .5s;
+          border-radius: 16px;
+          font-size: 20px;
+        }
+        .botonR:hover{
+          transform: scale(1.2);
+        }
+      </style>
+
+    <!--ESTE ES SONIDO DE LA CAJA (Leon)-->
+    <!-- <audio id="miSonido">
+        <source src="/audio/CajaLeon .mp3" type="audio/mp3">
+    </audio> -->
+    <!--ESTE ES SONIDO CORRECTO-->
+    <audio id="correcto">
+        <source src="/audio/Respuesta Correcta .mp3" type="audio/mp3">
+    </audio>
+    <!-- ESTE ES SONIDO INCORRECTO
+    <audio id="incorrecto">
+        <source src="/audio/Respuesta Incorrecta .mp3" type="audio/mp3">
+    </audio> -->
+
+    <script src="/js/nivel2.js"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="/js/sweetAlert.js"></script>
+</body>
+</html>
